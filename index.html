@@ -1,0 +1,50 @@
+<!doctype>
+<html lang="en">
+<head>
+    <base href="/">
+    <meta charset="utf-8">
+    <title>nrc code</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+    <!-- Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/2.3.0/firebase.js"></script>
+
+
+    <link rel="stylesheet" href="src/css/normalize.css">
+    <link rel="stylesheet" href="src/css/skeleton.css">
+    <link rel="stylesheet" href="src/css/app.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <!--<script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>-->
+    <link rel="stylesheet" href="src/google-code-prettify/prettify.css">
+    <script src="src/google-code-prettify/prettify.js"></script>
+</head>
+<body>
+<my-app>Loading...</my-app>
+
+<script>
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('app/bootadmin')
+            .then(null, console.error.bind(console));
+</script>
+</body>
+</html>
