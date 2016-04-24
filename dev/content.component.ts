@@ -49,7 +49,7 @@ import {tryCatch} from "rxjs/util/tryCatch";
         <div> Symbols come from Font Awesome Icons.</div>
         <div> Global styling comes from Skeleton css.</div>
         <span> If you wish you can contact me at my </span>
-        <a href="mailto:">e-mail</a>
+        <a href="mailto:info@nrccode.com">e-mail</a>
         <span class="fa fa-send"></span>
     </div>
     `,
